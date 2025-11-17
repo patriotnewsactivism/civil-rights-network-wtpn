@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Search, FileText, MessageCircle, MapPin, Shield, Users, Database, Upload, Clock, AlertTriangle } from 'lucide-react';
 import './App.css';
-import EnhancedInteractive3DMap from './components/EnhancedInteractive3DMap';
-import EnhancedResourcesAndLaws from './components/EnhancedResourcesAndLaws';
-import AILegalAssistant from './components/AILegalAssistant';
-import EnhancedRealTimeDashboard from './components/EnhancedRealTimeDashboard';
-import EnhancedFOIARequestTool from './components/EnhancedFOIARequestTool';
-import PoliceAccountabilityDatabase from './components/PoliceAccountabilityDatabase';
-import InvestigativeJournalismSuite from './components/InvestigativeJournalismSuite';
+import EnhancedInteractive3DMap from './components/EnhancedInteractive3DMap.jsx';
+import EnhancedResourcesAndLaws from './components/EnhancedResourcesAndLaws.jsx';
+import AILegalAssistant from './components/AILegalAssistant.jsx';
+import EnhancedRealTimeDashboard from './components/EnhancedRealTimeDashboard.jsx';
+import EnhancedFOIARequestTool from './components/EnhancedFOIARequestTool.jsx';
+import PoliceAccountabilityDatabase from './components/PoliceAccountabilityDatabase.jsx';
+import InvestigativeJournalismSuite from './components/InvestigativeJournalismSuite.jsx';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('ultimate');
@@ -172,7 +172,7 @@ const UltimateDashboard = () => {
 
         <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
           <div className="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-500 text-white mb-4">
-            <MapPin className="h-6 w-6" />
+            <MapPin className="h-6 w-8" />
           </div>
           <h3 className="text-lg font-medium text-gray-900 mb-2">Interactive Map</h3>
           <p className="text-gray-600">
